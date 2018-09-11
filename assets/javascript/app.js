@@ -258,17 +258,17 @@ $.ajax({
         var heads = $("<h3>");
         var acr = $("<p>")
         var err = $("<p>")
-        $(heads).html("TUS RESULTADOS SON: ");
+        $(heads).html("YOUR RESULTS ARE: ");
         $(heads).attr("class" , "reset2");
-        $(acr).html("Aciertos: " + aciertos );
+        $(acr).html("RIGHT GUESS: " + aciertos );
         $(acr).attr("class" , "reset2");
-        $(err).html("Errores: " + errores );
+        $(err).html("ERRORS: " + errores );
         $(err).attr("class" , "reset2");
         $(".question").append(heads);
         $(".question").append(acr);
         $(".question").append(err);
         var nButt = $("<button>");
-        $(nButt).html("REINICIAR JUEGO");
+        $(nButt).html("RESTART GAME");
         $(nButt).attr("class" , "btn btn-success reset2" );
         $(".question").append(nButt);
 
