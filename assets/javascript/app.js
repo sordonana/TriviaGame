@@ -34,6 +34,7 @@ var clk = 0;
             var anun = $("<h4>");
             $(anun).attr("class" , "anuncio reset2");
             $(anun).attr("style" , "color:red ; background-color:white" )
+            $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
             $(anun).html("TIMES UP!!! the correct answer was: " + res2);
             $(".anuncios").prepend(anun);
             questions(quest);
@@ -104,7 +105,7 @@ $.ajax({
     $(opcion4).attr("class" , "btn btn-success botones reset");
     $(opcion4).attr("value" , respuestas[3]);
     var br= $("<br>");
-    $(preg).attr("class" , "reset")
+    $(preg).attr("class" , "reset preg")
     $(preg).html(response.results[quest].question);
     $(preg).append(ndiv);
     $(".question").append(preg);
@@ -147,6 +148,7 @@ $.ajax({
                 clk++;
                 aciertos++;
                 $(anun).attr("style" , "color:green ; background-color:white")
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was correct");
                 $(".anuncios").prepend(anun);
                 questions(quest);
@@ -157,6 +159,7 @@ $.ajax({
                 clk++;
                 quest++;
                 $(anun).attr("style" , "color:red ; background-color:white" )
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was incorrect, the correct answer was: " + respuesta_correcta);
                 $(".anuncios").prepend(anun);
                 questions(quest);
@@ -174,6 +177,7 @@ $.ajax({
                 quest++;
                 aciertos++;
                 $(anun).attr("style" , "color:green ; background-color:white")
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was correct");
                 $(".anuncios").prepend(anun);
                 questions(quest);
@@ -183,6 +187,7 @@ $.ajax({
                 clk++;
                 quest++;
                 $(anun).attr("style" , "color:red ; background-color:white" )
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was incorrect, the correct answer was: " + respuesta_correcta);
                 $(".anuncios").prepend(anun);
                 questions(quest);
@@ -199,6 +204,7 @@ $.ajax({
                 quest++;
                 aciertos++;
                 $(anun).attr("style" , "color:green ; background-color:white")
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was correct");
                 $(".anuncios").prepend(anun);
                 questions(quest);
@@ -208,6 +214,7 @@ $.ajax({
                 clk++;
                 quest++;
                 $(anun).attr("style" , "color:red ; background-color:white" )
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was incorrect, the correct answer was: " + respuesta_correcta);
                 $(".anuncios").prepend(anun);
                 questions(quest);
@@ -224,6 +231,7 @@ $.ajax({
                 quest++;
                 aciertos++;
                 $(anun).attr("style" , "color:green ; background-color:white")
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was correct");
                 $(".anuncios").prepend(anun);
                 questions(quest);
@@ -233,6 +241,7 @@ $.ajax({
                 clk++;
                 quest++;
                 $(anun).attr("style" , "color:red ; background-color:white" )
+                $(anun).animate({height: '100px', opacity: '0.9'}, "slow");
                 $(anun).html("Your answer was incorrect, the correct answer was: " + respuesta_correcta);
                 $(".anuncios").prepend(anun);
                 questions(quest);
